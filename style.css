@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: lightcoral;
-    --secondary-color: DimGrey;
-    --tertiary-color: Gainsboro;
+    --background-color: lightcoral;
+    --title-color: DimGrey;
+    --header-color: Gainsboro;
+    --text-color: #000000;
+    --container-color: #F7F7F7;
 }/*Assim que se faz uma variavel no css*/
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     font-size: 15px;
     font-family: Lato, sans-serif;
 }
@@ -16,14 +18,14 @@ body {
     height: 520px;
     width: 368px;
     margin: 100px auto;
-    background: #f7f7f7;
+    background:var(--container-color);
     box-shadow: 5px 5px 2px black;
     border-radius: 20px;
 }
 
 .title {
-    background: var(--tertiary-color);
-    color: var(--secondary-color);
+    background: var(--header-color);
+    color: var(--title-color);
     padding: 15px;
     text-transform: uppercase;
     font-size: 18px;
@@ -45,7 +47,7 @@ body {
 }
 
 .formInput:focus {
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--secondary-color);
     outline: none;
 }
 
@@ -60,15 +62,19 @@ body {
     font-weight: bold;
     display: block;
     margin: 30px auto;
-    background: var(--primary-color);
+    background: var(--background-color);
     width: 200px;
     height: 50px;
     font-size: 17px;
     color: white;
 }
 
-#totalTip {
-    font-size: 20px;
-    margin-top: 5px;
-    text-align: center;
+.text {
+  color: var(--text-color)
+}
+
+#totalTip { 
+  font-size: 20px;
+  margin-top: 5px;
+  text-align: center;
 }

@@ -15,18 +15,18 @@
         <div>
             <form class="tipsForm" id="tipsForm">
                 <label for="bill">
-                    <p>Quanto ficou a conta?</p>
+                    <p class="text">Quanto ficou a conta?</p>
                 </label>
-                <p>
+                <p class="text">
                     R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
                 </p>
                 <label for="serviceQual">
-                    <p>Como foi o atendimento?</p>
+                    <p class="text">Como foi o atendimento?</p>
                 </label>
                 <p>
                     <select name="serviceQual" id="serviceQual" class="formSelect" required> <!--Select, campo com opções para selecionar-->
-                        <option disabled  selected value="0">Escolha uma opção</option> <!--Disable, desativa uma opção dentro do select-->
-                        <option value="0.3">30% - Incrivel</option>
+                        <option disabled  selected value="0" >Escolha uma opção</option> <!--Disable, desativa uma opção dentro do select-->
+                        <option value="0.3" >30% - Incrivel</option>
                         <option value="0.2">20% - Bom</option>
                         <option value="0.15">15% - Aceitavel</option>
                         <option value="0.1">10% - Ruim</option>
@@ -34,19 +34,24 @@
                     </select>
                 </p>
                 <label for="people">
-                    <p>Quantas pessoas irão dividir a conta?</p>
+                    <p class="text">Quantas pessoas irão dividir a conta?</p>
                 </label>
-                <p>
+                <p class="text">
                     <input type="number" placeholder="2" name="people" id="people" class="formInput" required> pessoa(s)
                 </p>
                 <button type="submit" class="formSubmit">Calcular</button>
             </form>
         </div>
-        <div id="totalTip">
+        <div id="totalTip" class="text">
             Total de Gorjeta:
             R$ <span id="tip">0.00</span>
             <span id="each">cada</span>
-        </div>
+    </div>
+    
+    <div class="ThemeBtn">
+      <input type="checkbox" id="theme" name="themeChange">
+      
+      <label for="theme" class="text" id="changeTheme">Mudar tema</label>
     </div>
     
     <script type="text/javascript" src="script.js"></script>
